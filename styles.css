@@ -96,7 +96,6 @@ body {
   border-right:none;
 }
 
-
 p {
   font-family: 'Quicksand', sans-serif;
   font-size:24px;
@@ -305,3 +304,5 @@ Bootstrap 4 breakpoints
   blockquote {font-size:1.5rem}
   .workGrid {grid-template-columns:auto auto auto auto;} 
 }
+
+
