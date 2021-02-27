@@ -1,0 +1,208 @@
+body {
+  background-color:#2c2c2c;
+  width:100vw;
+  color:#cccccc;
+  padding:10px;
+  font-family:'Quicksand',Helvetica,sans-serif;
+  font-size:1rem;
+  line-height:1.5;
+}
+p {
+  font-family: 'Quicksand', sans-serif;
+  font-size:24px;
+  margin-top:10px;
+  font-weight:400;
+}
+h1 {
+  font-family:'Fredericka the Great', Georgia, serif;
+  color:white;
+  font-weight:bold;
+}
+h2 {
+  font-family:'Poiret One', Helvetica, sans-serif;
+  font-weight:300;
+  margin-bottom:40px;;
+}
+a {
+  color:#cccccc;
+  text-decoration:none;
+}
+a:hover {
+  color:white;
+}
+.nav-item {
+  padding-right:20px;
+  font-size:36px;
+  font-family:'Poiret One', Helvetica, sans-serif;
+}
+
+.nav-item:hover {
+  color:#ffffff;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+  text-decoration:underline;
+}
+  
+.navBar {
+  font-family:'Poiret One', Helvetica, sans-serif;
+  margin:5px;
+  width:100vw;
+  position:fixed;
+}
+.navbar-nav {
+  color:#cccccc;
+  font-family:'Poiret One', Helvetica, sans-serif;
+}
+.navImg {
+  margin-right:10px;
+  padding:10px;
+}
+nav button {
+  margin-right:10px;
+}
+.dropdown-item {
+  font-size:36px;
+  color:#2c2c2c;
+  font-family:'Poiret One', Helvetica, sans-serif;
+}
+.leftSide {
+  flex-direction:column;
+  align-items:center;
+  float:left;
+  max-width: 600px;
+}
+.rightSide {
+  flex-direction:column;
+  align-items:baseline;
+  float:left;
+}
+.heroPhoto {
+  border-radius:12px;
+  padding:10px;
+}
+.card-deck {
+  max-width:750px;
+}
+.card {
+  background-color:#cccccc;
+  color:#2c2c2c;
+  border:none;
+  min-width:200px;
+  max-width:200px;
+  flex-direction:column;
+  word-wrap:normal;
+}
+.card-img-top {
+  height:200px;
+  width:auto;
+}
+.card-body {
+  background-color:#2c2c2c;
+  color:#cccccc;
+}
+.card-title {
+  font-family:'Poiret One', Helvetica, sans-serif;
+}
+.footer {
+  display:block;
+  background-color: #2c2c2c;
+  padding: 5px;
+  color: #cccccc;
+  float:none;
+  text-align:center;
+  margin-top:40px;
+}
+#aboutMainBody {
+  max-width:1200px;
+  margin:20px;
+}
+.aboutList {
+  line-height:1.5;
+  font-family:'Quicksand', Helvetica, sans-serif;
+}
+blockquote {
+  margin-left:40px;
+}
+iframe {
+  height:800px;
+  max-width:750px;
+}
+
+.workGrid {
+  display:grid;
+  max-width:1200px;
+  grid-template-columns: 4;
+  justify-content:start;
+  grid-gap:20px;
+}
+.workItem {
+  width:250px;
+  padding:5px;
+}
+.resumePDF {
+  min-width:200px;
+  height:60vh;
+}
+.flexContainer {
+  display:flex;
+  flex-direction:row;
+  flex-flow: row wrap;
+}
+.mySkills {
+  max-width:1200px;
+}
+.skillItem {
+  width:250px;
+  padding:5px;
+  margin:10px;
+}
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+h1 {font-size:1rem;} /*1rem = 16px*/
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+ 
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {  
+  h1 {font-size:3rem;} /*1rem = 16px*/
+  h2 {font-size:2rem;}
+  p {font-size:1rem}
+  blockquote {font-size:1rem}
+  .workGrid {grid-template-columns:auto auto;}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  h1 {font-size:3rem;} /*1rem = 16px*/
+  h2 {font-size:2rem;}
+  p {font-size:1.5rem}
+  blockquote {font-size:1.5rem}
+  .workGrid {grid-template-columns:auto auto;}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width:992px) { 
+  h1 {font-size:3rem;} /*1rem = 16px*/
+  h2 {font-size:2.5rem;}
+  p {font-size:1.5rem}
+  blockquote {font-size:1.5rem}
+  .workGrid {grid-template-columns:auto auto auto auto;}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1230px) {  
+  h1 {font-size:5rem;} /*1rem = 16px*/   
+  h2 {font-size:3.5rem;}
+  p {font-size:1.5rem}
+  blockquote {font-size:1.5rem}
+  .workGrid {grid-template-columns:auto auto auto auto;} 
+}
