@@ -7,6 +7,96 @@ body {
   font-size:1rem;
   line-height:1.5;
 }
+
+/* .loader {
+  animation:spin 1s infinite linear;
+  border:solid 2vmin transparent;
+  border-radius:50%;
+  border-right-color:#09f;
+  border-top-color:#09f;
+  box-sizing:border-box;
+  height:20vmin;
+  left:calc(50% - 10vmin);
+  position:fixed;
+  top:calc(50% - 10vmin);
+  width:20vmin;
+  z-index:1;
+}
+
+@keyframes spin {
+  100% {
+    transform:rotate(360deg);
+  }
+} */
+
+
+
+/* @keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+} */
+
+
+.btn {
+  padding-right:20px;
+  font-size:36px;
+  font-family:'Poiret One', Helvetica, sans-serif;
+  border: none;
+  border-radius: 10px;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.btn .circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.btn:hover {
+  color:white;
+}
+
+.btn:hover .circle {
+  height: 50px;
+  width: 100%;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+
+
 p {
   font-family: 'Quicksand', sans-serif;
   font-size:24px;
@@ -21,7 +111,8 @@ h1 {
 h2 {
   font-family:'Poiret One', Helvetica, sans-serif;
   font-weight:300;
-  margin-bottom:40px;;
+  margin-bottom:40px;
+  color:white;
 }
 a {
   color:#cccccc;
@@ -39,9 +130,17 @@ a:hover {
 .nav-item:hover {
   color:#ffffff;
 }
-.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-  text-decoration:underline;
-}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  text-align: right;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+  }
   
 .navBar {
   font-family:'Poiret One', Helvetica, sans-serif;
