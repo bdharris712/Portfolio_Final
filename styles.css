@@ -4,7 +4,7 @@ body {
   color:#cccccc;
   padding:10px;
   font-family:'Quicksand',Helvetica,sans-serif;
-  font-size:1rem;
+  /* font-size:1rem; */
   line-height:1.5;
 }
 
@@ -184,13 +184,14 @@ p {
 h1 {
   font-family:'Fredericka the Great', Georgia, serif;
   color:white;
-  font-weight:bold;
+  /* font-weight:bold; */
 }
 h2 {
   font-family:'Poiret One', Helvetica, sans-serif;
   font-weight:300;
   margin-bottom:40px;
   color:white;
+  /* font-size:2rem; */
 }
 a {
   color:#cccccc;
@@ -199,6 +200,39 @@ a {
 a:hover {
   color:white;
 }
+
+td {
+  font-size:24px;
+}
+
+li {font-size: 1.5rem;}
+
+hr {
+  border: none;
+}
+hr::before {
+  content: '***';
+  display: block;
+  text-align: center;
+  font-size:48px;
+}
+hr::after {
+  content:'      ';
+  display:block;
+  text-align: center;
+  font-size:48px;
+}
+
+button {
+  border-radius:60px;
+  height:100px;
+  cursor:pointer;
+}
+button:hover {
+  background-color:lightgrey;
+  cursor:pointer;
+}
+
 .nav-item {
   padding-right:20px;
   font-size:36px;
@@ -361,7 +395,7 @@ Bootstrap 4 breakpoints
 @media (min-width: 768px) {  
   h1 {font-size:3rem;} /*1rem = 16px*/
   h2 {font-size:2rem;}
-  p {font-size:1.5rem}
+  p {font-size:1rem}
   blockquote {font-size:1.5rem}
   .workGrid {grid-template-columns:auto auto;}
 }
@@ -370,18 +404,18 @@ Bootstrap 4 breakpoints
 @media (min-width:992px) { 
   h1 {font-size:3rem;} /*1rem = 16px*/
   h2 {font-size:2.5rem;}
-  p {font-size:1.5rem}
+  p {font-size:1rem}
   blockquote {font-size:1.5rem}
   .workGrid {grid-template-columns:auto auto auto auto;}
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1230px) {  
-  h1 {font-size:5rem;} /*1rem = 16px*/   
-  h2 {font-size:3.5rem;}
+  h1 {font-size:3rem;} /*1rem = 16px*/   
+  h2 {font-size:2.5rem;}
   p {font-size:1.5rem}
   blockquote {font-size:1.5rem}
-  .workGrid {grid-template-columns:auto auto auto auto;} 
+  .workGrid {grid-template-columns:auto auto auto auto;}
 }
 
 
